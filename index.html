@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Jake Inoc| Web Designer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-img">
+                    <img src="me.jpg" alt="me" height="170px" width="170px" />
+                </div>
+                <h1>Christian Jake Inoc</h1>
+                <p>Web Designer specializing in clean, semantic HTML & CSS</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Christian, a passionate web designer with a love for crafting beautiful, accessible websites using the core building blocks of the web: HTML and CSS.</p>
+                <p>My approach focuses on semantic markup, performance, and creating intuitive user experiences. I believe in the power of clean code and thoughtful design to create websites that stand the test of time.</p>
+                <p>When I'm not coding, you can find me hiking, reading.
+        </p>.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>HTML</h3>
+                    <ul class="skill-list">
+                        <li>Semantic HTML5</li>
+                        <li>Accessibility (WCAG)</li>
+                        <li>Form Validation</li>
+                        <li>SEO Best Practices</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>CSS</h3>
+                    <ul class="skill-list">
+                        <li>Responsive Design</li>
+                        <li>CSS Grid/Flexbox</li>
+                        <li>Custom Properties</li>
+                        <li>Animations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li>Typography</li>
+                        <li>Color Theory</li>
+                        <li>UI/UX Principles</li>
+                        <li>Wireframing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2 class="section-title">Selected Projects</h2>
+            <p style="text-align: center;">Here's some of my most recent work showcasing HTML & CSS implementations</p>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-img">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d21c63be-655f-406f-bb5f-84a9d1e25bcf.png" alt="Minimalist portfolio website design with ample white space and elegant typography" />
+                    </div>
+                    <div class="work-info">
+                        <h3>Portfolio Redesign</h3>
+                        <p>A clean, modern portfolio for a photographer featuring a masonry grid layout.</p>
+                        <div class="work-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-img">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f87b420d-ba93-4666-8900-7ef583fea3f3.png" alt="Restaurant website showing food menu with appetizing photography and clean layout" />
+                    </div>
+                    <div class="work-info">
+                        <h3>Café Website</h3>
+                        <p>A responsive website for a local café with online ordering capabilities.</p>
+                        <div class="work-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-img">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca670219-9a1b-4de7-9459-d8f46764fb08.png" alt="Educational platform interface with clean typography and well-structured content sections" />
+                    </div>
+                    <div class="work-info">
+                        <h3>Learning Platform</h3>
+                        <p>An accessible learning management system for online courses.</p>
+                        <div class="work-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p>Have a project in mind or want to chat about web design? I'd love to hear from you!</p>
+                <p>You can reach me at <a href="mailto: christianjakeinoc76@gmail.com">christianjakeinoc76@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter">T</a>
+                    <a href="#" class="social-link" aria-label="GitHub">G</a>
+                    <a href="#" class="social-link" aria-label="Dribbble">D</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year"></span> Christian Inoc | Web Designer & Developer</p>
+            <p>Built with HTML & CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JS to add current year to footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
